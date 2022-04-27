@@ -1,0 +1,8 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane>
+	<top>
+		<Label text="Student Management Application" />
+	</top>
+</BorderPane>

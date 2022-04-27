@@ -1,0 +1,36 @@
+Button {
+	-fx-pref-width: 300;
+	-fx-pref-height: 30;
+}
+
+Label {
+	-fx-pref-width: 100;
+	-fx-pref-height: 30;
+}
+
+TextField, ComboBox, DatePicker {
+	-fx-pref-width: 200;
+	-fx-pref-height: 30;
+}
+
+ListView {
+	-fx-pref-width: 300;
+	-fx-pref-height: 500;
+}
+
+.title {
+	-fx-pref-width: 600;
+	-fx-alignment: center;
+}
+
+.text-red {
+	-fx-text-fill: RED;
+}
+
+VBox {
+	-fx-spacing: 10;
+}
+
+GridPane {
+	-fx-vgap: 10;
+}

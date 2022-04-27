@@ -1,0 +1,45 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+
+<BorderPane xmlns:fx="https://javafx.org/fxml/1">
+	<stylesheets>
+		<URL value="@app.css" />
+	</stylesheets>
+	<top>
+		<Label styleClass="title" text="Student Management Application" />
+	</top>
+	<center>
+		<GridPane>
+			<Label text="Id" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+			<TextField GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+			<Label text="Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+			<TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+			<Label text="Date of Birth" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+			<DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
+			<Label text="Group Code" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+			<ComboBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+				<items>
+					<FXCollections fx:factory="observableArrayList">
+						<String fx:value="DISS05" />
+						<String fx:value="DISS06" />
+					</FXCollections>
+				</items>
+			</ComboBox>
+			<Button text="Add" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+			<Button text="Edit" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="2"/>
+			<Button text="Cancel Edit" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+		</GridPane>
+	</center>
+	<right>
+		<VBox>
+			<ListView />
+			<Button text="Delete" />
+		</VBox>
+	</right>
+	<bottom>
+		<Label styleClass="title, text-red" text="Warning" />
+	</bottom>
+</BorderPane>
